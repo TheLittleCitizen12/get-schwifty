@@ -17,8 +17,10 @@ body {
     margin: 10px auto;
 }
 ul {
-    display: flex;
+
+
     flex-wrap: wrap;
+    display: flex;
     list-style-type: none;
     justify-content: space-evenly;
     font-family: 'Audiowide';
@@ -26,6 +28,8 @@ ul {
 }
 
 ul li {
+
+
     background: #456990;
     width: 30%;
     height: 150px;

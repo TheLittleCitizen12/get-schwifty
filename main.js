@@ -1,4 +1,6 @@
 let ul = document.querySelectorAll('li');
+let Size=3;
+let biggestNum = Size * Size;
 
 let numbers = new Array();
 let a=0;
@@ -150,12 +152,12 @@ function checkIfTrue(){
 }
 function createList(){
     
-    for(let i =0; i <3;i++){ 
+    for(let i =0; i <Size;i++){ 
         numbers[a] = new Array();
         b=0;
-        for(let j=0; j<3;j++){
+        for(let j=0; j<Size;j++){
             let strNum = `${count}`;
-            if(count == 9){
+            if(count == biggestNum){
                 numbers[a][b]=' ';
             }
             else{
@@ -202,8 +204,8 @@ const shuffle = (arr) => {
  const fillGrid = () => {
     shuffled = shuffle(numbers);
     let count =0;
-        for(let i =0; i<3; i++){
-            for(let j=0; j<3; j++){
+        for(let i =0; i<Size; i++){
+            for(let j=0; j<Size; j++){
                 ul[count].innerText = shuffled[i][j];
                 count++;
             }
@@ -214,6 +216,10 @@ const shuffle = (arr) => {
 
 
 fillGrid();
+
+function saveScore(){
+
+}
 
 
 
